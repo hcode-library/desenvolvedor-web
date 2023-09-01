@@ -7,6 +7,7 @@ Neste curso, você aprenderá as atuais e melhores práticas para desenvolver si
 
 ## Sobre o Curso
 ![Logo do Curso](https://hcode.azureedge.net/courses/WEBFULL/logo_1693267781615.svg)
+
 Este curso foi desenvolvido pela [Hcode Treinamentos](https://hcode.com.br), uma referência em treinamento online na área de desenvolvimento web e programação. O [curso de Desenvolvimento Web \[2024\]](https://hcode.com.br/cursos/desenvolvedor-web) foi projetado para fornecer a você as habilidades necessárias para criar sites modernos, responsivos e atraentes.
 
 ## Tópicos Abordados
