@@ -1,0 +1,280 @@
+/*@import url("./normalize.css");*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#profile {
+    position: relative;
+}
+
+#avatar {
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+#logo {
+    width: 151px;
+    height: 51px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+
+header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    & button {
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    &>div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & li {
+            padding: 15px 0;
+
+            &.active {
+                border-bottom: #4285F4 1px solid;
+
+                & a {
+                    color: #4285F4;
+                    padding: 5px;
+                }
+            }
+
+            & a {
+                text-transform: uppercase
+            }
+        }
+    }
+
+    &>ul {
+        display: flex;
+        align-items: center;
+    }
+
+    & nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        & li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .link-desktop {
+            display: none;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+
+
+    &>ul {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+
+        & li.header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-family: OpenSans;
+            border-bottom: none;
+
+        }
+
+        & li {
+            display: flex;
+            gap: 10px;
+            padding-top: 20px;
+        }
+
+        & li:not(.header)+li {
+            border-top: #E0E2E5 1px solid;
+        }
+
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .actions {
+            display: flex;
+            gap: 12px;
+
+            & button {
+                background-color: #F8F9FA;
+                border-radius: 4px;
+                width: 141px;
+                height: 36px;
+                border: none;
+                cursor: pointer;
+                color: rgb(60, 64, 67);
+
+                &:hover {
+                    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+                    border: 1px solid #dadce0;
+                }
+            }
+        }
+
+        &>div:nth-child(1) {
+            min-width: 100%;
+            height: 38px;
+            margin: 29px 0;
+            border: #DFE1E5 1px solid;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+
+            & .input-icons {
+                display: none;
+            }
+
+            &>* {
+                min-width: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            & input {
+                border: none;
+                outline: none !important;
+                flex: 1;
+                width: 80vw;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+
+    & a {
+        color: #70757A;
+    }
+
+    & p {
+        padding: 15px;
+        margin: 0;
+        color: rgb(60, 64, 67);
+    }
+
+    & nav {
+        border-top: #DADCE0 1px solid;
+        padding: 15px;
+
+        & ul {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-family: Arial;
+        font-weight: initial;
+    }
+
+    .hide-on-desktop {
+        display: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        & nav ul {
+            & .link-desktop {
+                display: flex;
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        top: -100px;
+        left: initial;
+
+        & form>div:nth-child(1) {
+            min-width: 584px;
+            height: 48px;
+
+            & .input-icons {
+                display: flex;
+            }
+
+            & input {
+                width: initial;
+            }
+        }
+    }
+
+    #logo {
+        width: unset;
+        height: unset;
+    }
+
+    footer {
+        & nav {
+            display: flex;
+            justify-content: space-between;
+
+            & ul {
+                display: flex;
+            }
+        }
+    }
+}
