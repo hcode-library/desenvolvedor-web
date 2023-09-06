@@ -1,5 +1,5 @@
 
-# Curso de Desenvolvimento Web [2024] - Hcode
+# Curso de Desenvolvimento Web Profissional [2024] - Hcode
 
 Bem-vindo ao repositório oficial do curso de [Desenvolvimento Web Profissional \[2024\]](https://hcode.com.br/cursos/desenvolvedor-web) oferecido pela Hcode!
 
