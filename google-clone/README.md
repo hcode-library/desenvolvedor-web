@@ -1,7 +1,7 @@
 
 # Curso de Desenvolvimento Web [2024] - Hcode
 
-Bem-vindo ao repositório oficial do curso de [Desenvolvimento Web \[2024\]](https://hcode.com.br/cursos/desenvolvedor-web) oferecido pela Hcode!
+Bem-vindo ao repositório oficial do curso de [Desenvolvimento Web Profissional \[2024\]](https://hcode.com.br/cursos/desenvolvedor-web) oferecido pela Hcode!
 
 Neste curso, você aprenderá as atuais e melhores práticas para desenvolver sites incríveis com HTML 5, CSS 3 e JavaScript. Além disso, você terá a oportunidade de aplicar seus conhecimentos em nosso primeiro projeto prático, o "Google Clone", onde criaremos do zero a página inicial do Google, incluindo uma versão responsiva para dispositivos móveis.
 
