@@ -1,0 +1,67 @@
+body>footer #mls {
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-top: var(--black-color) 1px solid;
+        margin-top: 20px;
+        padding-top: 20px;
+
+        >img {
+            width: 100px;
+            height: 100px
+        }
+
+        & ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 30px;
+
+            >li {
+                list-style: none;
+
+                & a {
+                    color: var(--text-color);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        >div {
+            flex-direction: column;
+            margin: 20px;
+
+            & p {
+                color: var(--text-color);
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+
+            >div {
+                border-left: var(--text-color) 1px solid;
+
+                padding-left: 40px;
+
+                & ul {
+                    justify-content: flex-start;
+                }
+
+                ;
+            }
+        }
+    }
+}

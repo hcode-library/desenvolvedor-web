@@ -1,0 +1,22 @@
+body>footer {
+    & ul.menu {
+        margin: 0;
+        padding: 0;
+
+        >li {
+            list-style: none;
+
+            & a {
+                display: flex;
+                text-decoration: none;
+                color: var(--text-color);
+                padding: 10px 0;
+                font-size: 18px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

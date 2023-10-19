@@ -1,0 +1,38 @@
+body>footer {
+    background-color: var(--bg-color);
+    padding: 20px;
+
+    .section-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+        >section {
+            flex: 1;
+        }
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    >section {
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            >section:first-child {
+                margin-bottom: 50px;
+            }
+
+
+        }
+    }
+
+
+}
